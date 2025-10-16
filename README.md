@@ -23,3 +23,4 @@
  Присутствует адаптивность (мобильный / десктоп).
  
  Работает отметка о выполнении задачи
+<img width="795" height="924" alt="image" src="https://github.com/user-attachments/assets/3d30289e-b9dc-4c92-948c-4205075401f8" />
