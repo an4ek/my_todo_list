@@ -1,0 +1,35 @@
+.search-bar {
+    position: relative;
+
+    &__input {
+        width: 595px;
+
+        @include media-tablet {
+            width: 425px;
+        }
+
+        @include media-mobile {
+            width: 280px;
+        }
+    }
+
+    &__submit {
+        position: absolute;
+        top: 18%;
+        right: 2%;
+        color: var(--button-color);
+        border: none;
+        background: none;
+        cursor: pointer;
+        @include transition(color);
+
+        @include media-tablet {
+            right: 3%;
+        }
+
+        @include media-mobile {
+            top: 15%;
+            right: 4%;
+        }
+    }
+}

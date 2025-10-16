@@ -1,0 +1,55 @@
+$color-gray: #CDCDCD;
+$color-red: #E50000;
+$color-purple: #6C63FF;
+$color-purple-opacity: #6C63FF33;
+$color-focus-purple: #534CC2;
+$color-purple-shadow:#6C63FF66;
+$color-white: #F7F7F7;
+$color-white-opacity: #FFFFFF80;
+$color-white-shadow: #FFFFFF66;
+$color-black: #252525;
+$color-black-opacity: #25252580;
+$color-light-purple: #C3C1E5;
+$color-light-black: #666666;
+
+$breakpoint-mobile-max: 767px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 1023px;
+$breakpoint-desktop-min: 1024px;
+
+:root {
+    --bg-color: #{$color-white};
+    --text-color: #{$color-black};
+    --text-crossed-color: #{$color-black-opacity};
+    --input-color: #{$color-purple};
+    --input-shadow-color: #{$color-purple-shadow};
+    --input-text-color: #{$color-light-purple};
+}
+
+:root.theme-dark {
+    --bg-color: #{$color-black};
+    --text-color: #{$color-white};
+    --text-crossed-color: #{$color-white-opacity};
+    --input-color: #{$color-white};
+    --input-shadow-color: #{$color-white-shadow};
+    --input-text-color: #{$color-light-black};
+}
+
+:root {
+    --icon-gray-color: #{$color-gray};
+    --icon-red-color: #{$color-red};
+    --icon-purple-color: #{$color-purple};
+
+    --button-color: #{$color-purple};
+    --button-focus-color: #{$color-focus-purple};
+    --button-focus-light-color: #{$color-purple-opacity};
+    --button-text-color: #{$color-white};
+    --reverse-button-border-color: #{$color-purple};
+    --reverse-button-color: #{$color-white};
+    --reverse-button-text-color: #{$color-purple};
+
+    --mobile-max: #{$breakpoint-mobile-max};
+    --tablet-min: #{$breakpoint-tablet-min};
+    --tablet-max: #{$breakpoint-tablet-max};
+    --desktop-min: #{$breakpoint-desktop-min};
+}

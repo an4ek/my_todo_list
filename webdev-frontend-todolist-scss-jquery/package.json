@@ -1,0 +1,13 @@
+{
+  "name": "my_todo_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  },
+  "scripts": {
+    "sass:dev": "sass --watch scss/main.scss:dist/css/style.css",
+    "sass:prod": "sass --no-source-map --style compressed scss/main.scss:dist/css/style.css"
+  }
+}

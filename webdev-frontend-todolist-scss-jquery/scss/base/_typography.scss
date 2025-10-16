@@ -1,0 +1,37 @@
+input {
+  width: auto;
+  padding: 6px 16px;
+  font-family: inherit;
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  border: 1px solid var(--button-color);
+  border-radius: $border-radius-md;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  @include transition(all);
+
+  &::placeholder {
+    color: var(--input-text-color);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--button-focus-light-color);
+  }
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../../assets/fonts/Kanit-Regular.woff") format("woff");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../../assets/fonts/Kanit-Medium.woff") format("woff");
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  font-display: swap;
+}

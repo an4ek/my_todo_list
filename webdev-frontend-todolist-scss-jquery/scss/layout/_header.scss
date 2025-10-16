@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: $font-weight-medium;
+        font-size: 28px;
+
+        @include media-tablet {
+            margin-top: 20px;
+        }
+
+        @include media-mobile {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    }
+
+    &__nav {
+        margin-top: 15px;
+        display: flex;
+        gap: 16px;
+
+        @include media-tablet {
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        @include media-mobile {
+            margin-top: 15px;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}

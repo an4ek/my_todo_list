@@ -1,0 +1,85 @@
+// === Цвета ===
+$color-bg-light: #f7f7f7;
+$color-bg-dark: #252525;
+$color-text-light: #252525;
+$color-text-dark: #f7f7f7;
+$color-text-crossed-light: rgba(37, 37, 37, 0.5);
+$color-text-crossed-dark: rgba(255, 255, 255, 0.5);
+$color-primary: #6c63ff;
+$color-primary-focus: #534cc2;
+$color-primary-focus-light: rgba(108, 99, 255, 0.2);
+$color-icon-gray: #cdcdcd;
+$color-icon-red: #e50000;
+$color-input-text-light: #c3c1e5;
+$color-input-text-dark: #666666;
+
+// === Шрифты ===
+$font-family-main: 'Kanit', 'Roboto', sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+// === Размеры ===
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
+$spacing-3xl: 64px;
+$spacing-4xl: 128px;
+
+// === Радиусы ===
+$border-radius-sm: 4px;
+$border-radius-md: 6px;
+$border-radius-lg: 8px;
+$border-radius-xl: 16px;
+
+// === Breakpoints ===
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// === Миксины ===
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+@mixin media-mobile {
+    @media screen and (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+// === Темы через CSS-переменные ===
+:root {
+    --bg-color: #{$color-bg-light};
+    --button-text-color: #f7f7f7;
+    --text-color: #{$color-text-light};
+    --text-crossed-color: #{$color-text-crossed-light};
+    --input-text-color: #{$color-input-text-light};
+    --button-color: #{$color-primary};
+    --button-focus-color: #{$color-primary-focus};
+    --button-focus-light-color: #{$color-primary-focus-light};
+    --icon-gray-color: #{$color-icon-gray};
+    --icon-red-color: #{$color-icon-red};
+}
+
+:root.theme-dark {
+    --bg-color: #{$color-bg-dark};
+    --button-text-color: #f7f7f7;
+    --text-color: #{$color-text-dark};
+    --text-crossed-color: #{$color-text-crossed-dark};
+    --input-text-color: #{$color-input-text-dark};
+}
